@@ -1,4 +1,4 @@
-# ICALL GADGET ABUSE FOR COMMUNICATION
+# ICALL GADGET ABUSE FOR  KERNEL COMMUNICATION
 ### General info: this is in the windows kernel and it will allow us to communicate in our driver without being detected to by anticheats
 So I was scrolling around in IDA and found this
 

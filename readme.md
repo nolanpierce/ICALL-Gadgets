@@ -31,5 +31,5 @@ In cpp we need to just get the address to the function then map our shellcode in
  memcpy((PVOID)FunctionAddress, &shellcode, sizeof(shellcode));
  EnableWriteProtection();
 ```
-Wrap Up
+# Wrap Up
 Hopefully you took something from this quick write up just know that you can find other gadgets aswell that will do tons more the more complex the better.

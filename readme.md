@@ -17,7 +17,7 @@ We are going to make shellcode that sets rax to a ptr to our handler function. T
  call   QWORD PTR [rip+0x720d4]        # 0x720f8
  jmp    0x29
 ```
-Our code
+# Our code
 In cpp we need to just get the address to the function then map our shellcode into it but here is where it gets tricky if we do this simply how it is we will corrupt the stack and bluescreen from time to time. To avoid this we will need to repair the stack. So insteaed of returning inside of our handler we should be performing the same operations the functions would be doing if we didnt modify it. I will leave this for the reader to do on their own because I dont want to spoonfeed an amazing method of evading the anticheats but remember to look at the original asm of the function and see what we are modifying. SIDE NOTE : If you fix the stack corruption and do what the function was intended to do inside of your handler it will appear as nothing has been modified! :)
 ```c
  //getting address to function
